@@ -74,6 +74,7 @@ body::before {
   }
 .nabvar{
     background-color: transparent;
+    width: 100%;
 }
 .navbar-nav{
   align-items: center;
@@ -156,6 +157,7 @@ span{
         
         background: black;
         padding: 10% 0;
+        width: 100%;
         margin: 10% -20%;
         position: relative;
         border-radius: 6px;
@@ -637,10 +639,11 @@ footer{
 
   .mensaje{
     color: white;
-    width: 10%;
+    width: 5%;
   }
  textarea{
-    top: 10%;
+    width: 100%;
+     top: 10%;
      background-color: transparent;
      color: white;
   }
