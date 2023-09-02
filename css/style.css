@@ -55,7 +55,7 @@ body::before {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.2);
     font-family: 'Poppins', sans-serif;
     z-index: 1000;
@@ -68,7 +68,7 @@ body::before {
 
 /* Aplica un filtro de desenfoque a los contenedores ocultos */
 .hero.scrolled {
-    padding: 10px 9%; /* Ajusta el padding cuando se desplaza hacia abajo */
+    padding: 5% 9%; /* Ajusta el padding cuando se desplaza hacia abajo */
     backdrop-filter: none; /* Desactiva el efecto de desenfoque */
     -webkit-backdrop-filter: none; /* Para compatibilidad con navegadores webkit */
   }
