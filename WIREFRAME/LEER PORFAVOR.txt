@@ -1,0 +1,2 @@
+profe moqups no me deja exportar , dice que tengo que adquirir un plan mensual.
+Las fuentes del wireframe son distintas a las del html y css , pero bueno espero que este bien!

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header> <!--encabezado-->
+        <nav> <!--menu de navegacion-->
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="#tecnologias">Tecnologias</a></li>
+               
+                <li><a href="#sobremi">Sobre mi</a></li>
+               
+
+                <button class="nav-btn-contact"><a class="nav-btn"  href="#contact">Contactame</a></button>
+            </ul>
+           
+           
+        </nav>
+    </header>
+    <section id="contact" class="contact">
+        <h1 class="contact-me">Contactame</h1>
+        
+
+        <div class="form-container">
+            <form class="contact-form">
+                <label class="nombre" for="nombre">NOMBRE</label>
+                <input class="nombre" type="text" required name="nombre">
+                <label class="nombre" for="nombre">APELLIDO</label>
+                <input class="nombre" type="text" required name="apellido">
+                <label class="nombre" for="mail">EMAIL</label>
+                <input class="nombre" type="email" name="mail">
+                <label class="nombre" for="number">NUMERO DE TELEFONO</label>
+                <input class="nombre" type="text" name="telefono">
+                <label class="pais" for="pais">Selecciona tu pais</label>
+                <select class="pais" name="pais">
+                    <option value="ARG">Argentina</option>
+                    <option value="URU">Uruguay</option>
+                    <option value="BR">Brazil</option>
+                    <option value="BOL">Bolivia</option>
+                </select>
+                <label for="mensaje">Enviar un comentario (opcional)</label>
+                <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+
+                <label class="nombre" for="terminos">Soy empresa/Reclutador</label>
+                <input type="checkbox" name="terminos">
+
+                <input type="submit" value="ENVIAR" class="enviar"><!--envia los datos del formulario-->   <!--VALUE modifica lo que el usuario visualiza en el boton-->
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <h1 class="footer-heading">MY PORTFOLIO | JEREMIAS GONZALEZ - FRONT-END REACT (en proceso)</h1>
+    </footer>
+</body>
+</html>

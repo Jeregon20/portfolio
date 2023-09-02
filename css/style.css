@@ -1,0 +1,664 @@
+/*reseteo de css*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:ital,wght@0,400;0,500;0,600;0,800;1,500&family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  :root {
+    --card-height: 35vh;
+    --card-width: calc(var(--card-height) / 1.5);
+  }
+/*cambiar la configuracion de la raiz*/
+html{
+    font-size: 62,5%;
+
+}
+/*1 rem==10px */
+
+
+body{
+    font-family:  'Poppins', sans-serif;
+    height:100%;
+    width: 90%;
+    margin: 0;
+    --x: calc(var(--posX, 0) * 1px);
+    --y: calc(var(--posY, 0) * 1px);
+    background-image: 
+      linear-gradient(115deg, rgb(211 255 215), rgb(0 0 0)), 
+      radial-gradient( 90% 100% at calc( 50% + var(--x)) calc( 0% + var(--y)), rgb(200 200 200), rgb(022 000 045)), 
+      radial-gradient(100% 100% at calc( 80% - var(--x)) calc( 0% - var(--y)), rgb(250 255 000), rgb(036 000 000)), 
+      radial-gradient(150% 210% at calc(100% + var(--x)) calc( 0% + var(--y)), rgb(020 175 125), rgb(000 010 255)), 
+      radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(124, 98, 87), rgb(000 200 255)), 
+      linear-gradient(60deg, rgb(255 000 000), rgb(120 086 255));
+    background-blend-mode: overlay, overlay, difference, difference, difference, normal;
+    transition: all ease .55s;
+  }
+
+
+  .hero {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.2);
+    font-family: 'Poppins', sans-serif;
+    z-index: 1000;
+    overflow: hidden;
+    transition: all ease .55s;
+    backdrop-filter: blur(10px); /* Agrega el efecto de desenfoque */
+    -webkit-backdrop-filter: blur(10px); /* Para compatibilidad con navegadores webkit */
+    /* Oculta cualquier contenido que desborde de .hero */
+}
+
+/* Aplica un filtro de desenfoque a los contenedores ocultos */
+.hero.scrolled {
+    padding: 10px 9%; /* Ajusta el padding cuando se desplaza hacia abajo */
+    backdrop-filter: none; /* Desactiva el efecto de desenfoque */
+    -webkit-backdrop-filter: none; /* Para compatibilidad con navegadores webkit */
+  }
+.nabvar{
+    background-color: transparent;
+}
+.navbar-nav{
+  align-items: center;
+  
+  
+}
+
+.navbar-brand{
+    color: #ffffff;
+    font-size: 2rem;
+    font-family:'Righteous', cursive;
+    transition: all ease .55s;
+
+}
+.navbar-brand:hover{
+    color: #000000;
+}
+.nav-link{
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: all ease .55s;
+}
+.nav-link:hover{
+    align-items: center;
+    color: #05fff2;
+    
+  }
+
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    height: 100vh;
+    width: 100vw;
+  }
+ 
+.col-12{
+    margin: 0 -2rem;
+    font-size: 2.7rem;
+    color: #F5FCFF;
+    font-family: 'Righteous', cursive;
+    transition: all ease 11s;
+    text-align: center;
+}
+hr{
+    color: #f5f5f5;
+    border: solid 0.5rem white;
+    align-content: center;
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 1rem 2rem;
+}
+.col-9{
+    display: none;
+}
+span{
+    align-items: center;
+    background-color: black;
+    border: solid 5rem 2rem white;
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+   
+   
+    /* Espacio entre la imagen y el texto */
+
+
+
+
+    .skills {
+        
+        padding: 25%;
+        gap: 3;
+        
+      }
+      
+      .card {
+        
+        background: black;
+        padding: 20% 0;
+        margin: 10% -20%;
+       
+        position: relative;
+        border-radius: 6px;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 1.5em;
+        font-family: cursive;
+      }
+      
+    
+    
+      
+      
+      .card::before {
+        content: "";
+        width: 104%;
+        height: 102%;
+        border-radius: 8px;
+        background-image: linear-gradient(
+          var(--rotate)
+          , #f5f5f5, #000000 43%, #ffffff);
+          position: absolute;
+          z-index: -1;
+          top: -1%;
+          left: -2%;
+          animation: spin 2.5s linear infinite;
+      }
+      
+      
+      
+      @keyframes spin {
+        0% {
+          --rotate: 0deg;
+        }
+        100% {
+          --rotate: 360deg;
+        }
+      }
+      .card-text{
+        color: white;
+      }
+      
+.content-tech{
+    padding: 100px;
+    
+}
+.about_me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10%;
+    margin-bottom: 70%;
+    
+  }
+  
+  .about_me-img {
+   padding: 10%;
+    top: 10%;
+     /* Espacio entre la imagen y el texto */
+  }
+  .about_me-img img{
+    width: 100%;
+  }
+  
+  
+  .about_me-h1{
+   text-align: center;
+   font-size: 3rem;
+   color: white;
+   font-family: 'Righteous', cursive;
+  }
+  .about_me-h5{
+    text-align: center;
+    padding: 10%;
+    font-size: 1.3rem;
+    color: white;
+  }
+.contenedor{
+     display: grid; 
+
+     grid-template-columns:30% 70%;
+     /* crear columnas 
+     */
+    grid-template-rows:100px;
+    /* crear filas */
+}
+.hijo-uno{
+background-color: #44E2DC;
+}
+.hijo-dos{
+background-color: red;
+}
+.hijo-tres{
+background-color: wheat;
+}
+.hijo-cuatro{
+background-color: purple;
+}
+
+
+.caja{
+    height: 600px;
+    display: grid;
+    background-color: #44E2DC;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+}
+.item-uno{
+    justify-self: end;
+}
+.item-cuatro{
+    justify-self: end;
+}
+
+
+/* medidas absolutas en px
+   medidas relativas en rem(16px por defecto),% y viewport(sirve para responsive)
+   */
+ 
+
+
+----------------------
+/*TIPOGRAFIA LOCAL
+ 
+@font-face{
+    font-family: ''mi fuente'';
+    src: url('mi_fuente.ttf'); /*ubicación de la fuent
+
+*/
+
+/*
+                    BOX MODEL
+ancho=width
+alto=height
+overflow=visible/hidden, el excedente lo corta/scroll/auto scroll para cualquier eje 
+-imagenes
+-no importa si son de linea o de bloque
+content=espacio de texto o imagen
+padding=espacio libre entre el contendio y el borde de la caja , es parte del espacio interno
+margin=separacion asignada desde el borde hacia otros elementos
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+       
+            abreviacion
+       top  right  bottom  left
+margin:10px 20px   30px    40px
+
+padding-top
+padding-right
+padding-bottom
+padding-left
+
+padding: 10px 20px 30px 40px
+*/
+
+/*   BORDES 
+    
+
+border-top
+border-right
+border-bottom
+border-left
+
+    -solid
+    -outset
+     -inset
+    -double
+*/
+
+/* 
+            DISPLAY
+
+        block, inline
+        EN BLOQUE SE COLOCAN UNO DEBAJO DEL OTRO O SE SALTAN LA LINEA
+        INLINE NO HACE NADA Y SOLO LO VISUALIZA
+
+        display: inline (pasar de bloque a linea)
+        display: block(pasar de de linea a bloque
+        display: inline-block (funciona en linea pero tiene elementos en bloque)
+            
+
+        display:flex el padre del contenedor debe tener flex 
+            es como pasarlos a linea y son flexibles
+*/
+ /*             POSICIONES
+
+
+            
+             -relative no afecta el resto de los elementos
+            -static
+            -absolute
+            -fixed=fijo
+            -sticky
+         
+*/
+/*             Z-INDEX
+            todos los elementos tienen 1
+            mas alto el z-index mas adelante estara el elemento          */
+
+    /*           flex-direction
+    
+    row = fila
+    row-reverse fila al reves
+    column columna
+    column-reverse columna al reves
+                  
+                   flex-wrap
+       nowrap = por defecto siempre muestra todo horizontalmente
+       wrap = permite que se muestren verticalmente
+       wrap-reverse
+                     
+                 flex-flow: row wrap;
+
+
+    
+            justify-content:
+            flex-start
+            center
+            flex-end
+            space-between
+            space-around
+            space-evenly;
+
+                EJE X
+
+            align-items 
+            flex-start
+            center
+            flex-end
+            baseline
+            stretch
+            
+            EJE Y
+               
+            align-content:
+            flex-start
+            center
+            flex-end
+            space-between
+            space-around
+            space-evenly
+            ;
+
+
+            ORDER
+          
+              
+
+           
+    */
+ 
+        /*
+                         GRIDS      
+                         
+                         
+
+
+
+
+
+        */
+
+
+                         
+
+.contact {
+    display: flex;
+    text-align: center;
+    padding: 40px 0;
+}
+.contact-me{
+    margin-left: 700px;
+    padding: 40px;
+    font-size: 3rem;
+}
+
+.form-container {
+    padding-top: 70px;
+    padding-left: 700px;
+    margin: 0 auto;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    
+    display: block;
+    margin-bottom: 10px;
+}
+.contact-form label,
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    
+    margin-bottom: 10px;
+}
+
+.enviar{
+    font-family: 'Poppins', sans-serif;
+    background-color: #d5d8d8;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+footer{
+    position: block;
+    top: 100%;
+}
+
+.login-box {
+    
+    top: 120%;
+    left: 100%;
+    width: 110%;
+    padding: 30%;
+   
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03f403;
+    font-size: 12px;
+  }
+  
+  .login-box form .sumbit {
+    position: relative;
+    display: inline-block;
+    padding: 5% 10%;
+    color: #000000;
+    border-radius: 20%;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 20%;
+    letter-spacing: .3rem;
+    border: none;
+    box-shadow: .5rem .5rem 1rem .5rem rgb(0, 0, 0)
+  }
+  
+  .login-box .sumbit:hover {
+    background: #000000;
+    color: #ffffff;
+    border-radius: 20% 10%;
+    box-shadow: 0 0 5px #969696,
+                0 0 25px #ffffff,
+                0 0 50px #626363,
+                0 0 100px #000000;
+  }
+  
+  .login-box .sumbit span {
+    position: absolute;
+    display: block;
+  }
+  
+  .login-box .sumbit span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    border-radius: 20% 10%;
+    background: linear-gradient(90deg, transparent, #13eb13);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box .sumbit span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    border-radius: 20% 10%;
+    background: linear-gradient(180deg, transparent, #08e61b);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .login-box .sumbit span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    border-radius: 20% 10%;
+    background: linear-gradient(270deg, transparent, #04ff04);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .login-box .sumbit span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    border-radius: 20% 10%;
+    background: linear-gradient(360deg, transparent, #60eb0f);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+
+  .mensaje{
+    color: white;
+    padding: 10% 30% 0 0;
+  }
+ textarea{
+    top: 10%;
+     background-color: transparent;
+     color: white;
+  }
+  
+.redes{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    top: 50%;
+    
+    
+}
+.wsp{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+.wsp img{
+    width: 50px;
+    height: 50px;
+}
