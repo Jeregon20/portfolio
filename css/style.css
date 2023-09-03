@@ -213,14 +213,16 @@ hr{
     top: 10%;
      /* Espacio entre la imagen y el texto */
   }
-  .about_me-img .presentacion-img{
-    width: 150%;
-    
-    border-radius: 10%;
-    box-shadow: 1rem 1rem 5rem rgb(222, 255, 103);
+
+
+  .about_me-img{
+    margin-right: 50%;
   }
   .presentacion-img{
-    margin-right: 50%;
+    width: 100%;
+    border-radius: 10%;
+    box-shadow: 1rem 1rem 5rem rgb(222, 255, 103); 
+    bottom: 1rem;
   }
   
   .about_me-h1{
