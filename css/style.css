@@ -186,11 +186,11 @@ hr{
       .card-text{
         color: #ffffff;
         text-align: center;
-        font-family: 'Righteous', cursive;
+        font-family: 'Poppins', sans-serif;
       }
      .card-text p{
       font-size: 1rem;
-      color:#eeff00;
+      color:#ffffff;
       margin-top:1rem;
      }
 
@@ -678,7 +678,7 @@ footer{
   body {
     font-family: 'Poppins', sans-serif;
     height: 400%;
-    width: 100vw;
+    width: 100%;
     font-size: 1.5em;
     overflow-x: hidden;
    
@@ -686,7 +686,7 @@ footer{
   
   #gradient
   {
-   width: 100vw;
+   width: 100%;
    height: 400%;
    padding: 0px;
    margin: 0px;
@@ -746,7 +746,7 @@ footer{
         align-items: center;
         justify-content: center;
         min-height: 100vh;
-        background-image: url("./assets/Imagen\de\WhatsApp\2023-09-04\a\las\21.19.31.jpg");
+        background-image: url("/assets/img.jpg");
         background-size: cover;
         background-attachment: fixed; /* Importante para el efecto parallax */
     }
@@ -787,14 +787,15 @@ footer{
     
 
         .skills {
-          transform: skew(-10deg, -5deg);
-          position: relative;
-          display: grid;
-          top: 10%; /* Agregamos 10px de distancia en la parte superior */
+            margin: 0 50px;
+            display: flex;
+            flex-direction: row;
           
-          left: 0;
-          bottom: 0;
-          grid-template-columns: repeat(3, 2fr); /* Dos columnas */
+          
+        }
+        .card-contain{
+          display: flex;
+          margin: 50px;
         }
         
         /* Asegúrate de que las tarjetas (.card) también tengan la misma distancia en la parte superior */
@@ -804,7 +805,7 @@ footer{
           background: black;
           width: 100%;
           height: 50%;
-          margin: 0 10px 100px; /* Ajustamos el margen para mantener la distancia en la parte superior */
+          margin: 0 100px 100px; /* Ajustamos el margen para mantener la distancia en la parte superior */
           
           border-radius: 20px 20px;
           flex-direction: column;
@@ -815,12 +816,13 @@ footer{
         }
         
         .card:hover {
+          transform: skew(-10deg, -5deg);
           transform: translateY(-50px);
           transition: all ease 1s;
         }
         
         .card:hover .card-text {
-          opacity: 1;
+          opacity: 5;
           transition: all ease .55s;
         }
         
@@ -833,7 +835,6 @@ footer{
         .card-text {
           font-family: 'Poppins', sans-serif;
           text-align: center;
-          box-shadow: 0px 15px 25px whitesmoke;
           position: absolute;
           top: 50%;
           left: 50%;
@@ -841,6 +842,9 @@ footer{
           opacity: 0;
           color: #000000;
           padding: 10px;
+        }
+       .card-text p{
+          color: white;
         }
         
         /* Estilos para el fondo ::before */
@@ -945,7 +949,7 @@ footer{
         display: inline-block;
         padding: 5px 10px;
         color: #000000;
-        border-radius: 20%;
+        border-radius: 10%;
         font-size: 1rem;
         text-decoration: none;
         text-transform: uppercase;
@@ -960,7 +964,7 @@ footer{
       .login-box .sumbit:hover {
         background: #000000;
         color: #ffffff;
-        border-radius: 20% 10%;
+        border-radius: 10% ;
         box-shadow: 0 0 5px #969696,
                     0 0 25px #ffffff,
                     0 0 50px #626363,
