@@ -198,6 +198,7 @@ hr{
         text-align: center;
         font-family: 'Poppins';
         font-weight: bold;
+        padding: 1rem;
       }
      .card-text p{
       font-size: 1rem;
@@ -205,6 +206,9 @@ hr{
       margin-top:1rem;
       font-family: 'Poppins';
       font-weight: bold;
+     }
+     .card-img-top{
+      padding: 2rem;
      }
 
 .content-tech{
@@ -254,6 +258,7 @@ hr{
     padding: 10%;
     font-size: 1.7rem;
     color: rgb(230, 251, 4);
+    font-weight:  bold;
   }
 
 .proyect-contain{
@@ -309,6 +314,7 @@ hr{
   font-weight: bold;
   font-size:20px;
   text-align: center;
+  padding: 1rem;
   
       }
 .btn-position{
@@ -628,29 +634,21 @@ footer{
   .login-box form .sumbit {
     position: relative;
     display: inline-block;
-    padding: 5% 10%;
+    padding: 2% 7%;
     color: #000000;
-    border-radius: 20%;
+    border-radius: 10%;
     font-size: 1rem;
     text-decoration: none;
     text-transform: uppercase;
     overflow: hidden;
     transition: .5s;
     margin-top: 20%;
-    letter-spacing: .3rem;
+    font-family: 'Poppins';
     border: none;
-    box-shadow: .5rem .5rem 1rem .5rem rgb(0, 0, 0)
+    box-shadow: .5rem .5rem  2rem rgb(0, 0, 0)
   }
   
-  .login-box .sumbit:hover {
-    background: #000000;
-    color: #ffffff;
-    border-radius: 20% 10%;
-    box-shadow: 0 0 5px #969696,
-                0 0 25px #ffffff,
-                0 0 50px #626363,
-                0 0 100px #000000;
-  }
+ 
   
   .login-box .sumbit span {
     position: absolute;
@@ -783,6 +781,7 @@ footer{
   }
 
     .hero{
+      
       width: 100%;
     }
 
@@ -832,6 +831,7 @@ footer{
     
   
       .container {
+        margin: 1% 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -943,7 +943,7 @@ footer{
         }
         
         .card:hover .card-img-top {
-          transform: rotateX(180deg);
+          transform: rotateY(160deg);
           filter: blur(10px);
           transition: all ease .55s;
         }
@@ -956,13 +956,15 @@ footer{
           left: 50%;
           transform: translate(-50%, -50%);
           opacity: 0;
-          color: #000000;
+          color: #ffea00;
           padding: 10px;
         }
        .card-text p{
           color: white;
         }
-        
+        .card-img-top{
+          padding: 0;
+         }
         /* Estilos para el fondo ::before */
      
         
@@ -1007,6 +1009,7 @@ footer{
       .proyect{
         display: flex;
         margin-left: 25%;
+        
       }
       .h3-p{
      
@@ -1025,7 +1028,7 @@ footer{
         transition: all ease 2s;
       }
       .proyect-contain{
-       
+        margin: 10% 0;
       }
       .proyect-c{
         display: flex;
