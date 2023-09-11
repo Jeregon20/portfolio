@@ -757,8 +757,17 @@ footer{
         color: #F5FCFF;
         font-family: 'Righteous', cursive;
         text-align: center;
+        margin: 0 100px;
     }
+   .c-img{
+    margin: 0 55px;
+    
+   }
+   .img-code{
+    width: 500px;
    
+    
+   }
     hr{
         color: #f5f5f5;
         border: solid 0.5rem white;
@@ -776,9 +785,8 @@ footer{
 
     .span-h1:hover{
       color: #eeff00;
-      border-radius: 40px 20px;
       transition: all ease .55s;
-      box-shadow: 0 0 56px white;
+      
     }
        
        
@@ -787,12 +795,31 @@ footer{
     
 
         .skills {
-            margin: 0 50px;
+            height: 800px ;
+            margin: 300px 50px;
             display: flex;
             flex-direction: row;
           
           
         }
+        .h2-s{
+          margin-top: 100px;
+         
+        }
+        h2{
+          flex-direction: column;
+          font-size: 70px;
+          font-weight: bold;
+          color: white;
+        }
+        h2:hover{
+          flex-direction: column;
+          font-size: 70px;
+          font-weight: bold;
+          color: rgb(239, 255, 8);
+          transition: all ease 2s;
+        }
+       
         .card-contain{
           display: flex;
           margin: 50px;
@@ -801,12 +828,11 @@ footer{
         /* Asegúrate de que las tarjetas (.card) también tengan la misma distancia en la parte superior */
         .card {
           
-          box-shadow:  30px 50px 40px rgba(255, 242, 57, 0.637);
-          background: black;
+          box-shadow:  30px 50px 100px rgba(255, 242, 57, 0.637);
+          background: rgb(47, 47, 47);
           width: 100%;
-          height: 50%;
+          height: 100%;
           margin: 0 100px 100px; /* Ajustamos el margen para mantener la distancia en la parte superior */
-          
           border-radius: 20px 20px;
           flex-direction: column;
           justify-content: center;
@@ -876,16 +902,110 @@ footer{
       
       .about_me-h1{
        text-align: center;
-       font-size: 3rem;
+       font-size: 150px;
        color: white;
        font-family: 'Righteous', cursive;
       }
       .about_me-h5{
         text-align: center;
         padding: 10%;
-        font-size: 1.3rem;
-        color: white;
+        font-size: 40px;
+        color: rgb(119, 244, 176);
+        font-weight: bold;
       }
+
+      .proyect{
+        display: flex;
+        margin-left: 25%;
+      }
+      .h3-p{
+     
+       margin-left: 900px;
+      }
+      h3{
+        font-size: 80px;
+        font-weight: bold;
+        color: white;
+
+      }
+      h3:hover{
+        font-size: 80px;
+        font-weight: bold;
+        color: rgb(12, 248, 103);
+        transition: all ease 2s;
+      }
+      .proyect-contain{
+       
+      }
+      .proyect-c{
+        display: flex;
+        flex-direction: row;
+      }
+      
+      .proyect-card{
+       
+        background: rgba(0,0,0,.5);
+        border: none;
+        box-shadow: 10px 10px 100px 30px rgb(51, 50, 50);
+      }
+      .proyect-card:hover{
+        transform: translateY(-10px);
+      }
+      .position-i{
+        top: -100px;
+      }
+      .i-proyect{
+        width: 100%;
+        
+      }
+      .proyect-body{
+        margin: 0px;
+        height: 100%;
+      }
+      .proyect-title{
+         text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size:40px;
+        font-weight: bold;
+        color: white;
+
+      }
+      .position-text{
+        margin-top: 20px;
+      }
+      .proyect-text{
+        font-family: 'Poppins';
+        color: rgb(255, 234, 3);
+        font-weight: bold;
+        font-size:20px;
+        text-align: center;
+        
+            }
+      .btn-position{
+        margin-top:80px;
+        margin-bottom: 0;
+        margin-left: 300px;
+      }
+      .a-btn{
+        padding: 5px;
+        background-color: white;
+        text-decoration: none;
+        color: black;
+        font-family: 'Poppins';
+        font-weight: bold;
+        border-radius: 10px 10px 10px;
+      }
+      .a-btn:hover{
+        transform: translate(10deg);
+        background-color: rgb(255, 255, 16);
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-family: 'Poppins';
+        font-weight: bold;
+      
+        border-radius: 10px 10px 10px;
+      }
+
       footer{
         position: block;
         top: 100%;
@@ -956,7 +1076,6 @@ footer{
         overflow: hidden;
         transition: .5s;
         margin-top: 20px;
-        letter-spacing: 5px;
         border: none;
         box-shadow: 8px 8px 16px 8px rgb(0, 0, 0)
       }
