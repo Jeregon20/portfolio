@@ -64,3 +64,4 @@ window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
     container.style.backgroundPositionY = -scrollY * 0.5 + 'px'; // Ajusta el valor 0.5 según tu preferencia
 });
+
