@@ -91,17 +91,4 @@ function animateFloating() {
 animateFloating(); // Inicia la animación
 
 // script.js
-const textElement = document.getElementById('texto');
-const text = "JEREMIAS GONZALEZ DEVELOPER FRONT-END"; // El texto que deseas mostrar
-let index = 0;
 
-function typeText() {
-    textElement.textContent = text.slice(0, index);
-    index++;
-
-    if (index <= text.length) {
-        setTimeout(typeText, 100); // Ajusta la velocidad de escritura
-    }
-}
-
-typeText(); // Inicia la animación
