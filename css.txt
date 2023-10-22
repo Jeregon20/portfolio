@@ -1,0 +1,190 @@
+/*.contenedor{
+display: grid; 
+
+grid-template-columns:30% 70%;
+/* crear columnas 
+*/
+/* grid-template-rows:100px; */
+/* crear filas */
+
+
+
+/* .hijo-uno{
+background-color: #44E2DC;
+}
+.hijo-dos{
+background-color: red;
+}
+.hijo-tres{
+background-color: wheat;
+}
+.hijo-cuatro{
+background-color: purple;
+} */
+
+
+/* .caja{
+  height: 600px;
+  display: grid;
+  background-color: #44E2DC;
+  grid-template-columns: repeat(2,1fr);
+  justify-items: center;
+  align-items: center;
+}
+.item-uno{
+  justify-self: end;
+}
+.item-cuatro{
+  justify-self: end;
+} */
+
+
+/* medidas absolutas en px
+ medidas relativas en rem(16px por defecto),% y viewport(sirve para responsive)
+ */
+
+
+
+----------------------
+/*TIPOGRAFIA LOCAL
+
+@font-face{
+  font-family: ''mi fuente'';
+  src: url('mi_fuente.ttf'); /*ubicación de la fuent
+
+*/
+
+/*
+                  BOX MODEL
+ancho=width
+alto=height
+overflow=visible/hidden, el excedente lo corta/scroll/auto scroll para cualquier eje 
+-imagenes
+-no importa si son de linea o de bloque
+content=espacio de texto o imagen
+padding=espacio libre entre el contendio y el borde de la caja , es parte del espacio interno
+margin=separacion asignada desde el borde hacia otros elementos
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+     
+          abreviacion
+     top  right  bottom  left
+margin:10px 20px   30px    40px
+
+padding-top
+padding-right
+padding-bottom
+padding-left
+
+padding: 10px 20px 30px 40px
+*/
+
+/*   BORDES 
+  
+
+border-top
+border-right
+border-bottom
+border-left
+
+  -solid
+  -outset
+   -inset
+  -double
+*/
+
+/* 
+          DISPLAY
+
+      block, inline
+      EN BLOQUE SE COLOCAN UNO DEBAJO DEL OTRO O SE SALTAN LA LINEA
+      INLINE NO HACE NADA Y SOLO LO VISUALIZA
+
+      display: inline (pasar de bloque a linea)
+      display: block(pasar de de linea a bloque
+      display: inline-block (funciona en linea pero tiene elementos en bloque)
+          
+
+      display:flex el padre del contenedor debe tener flex 
+          es como pasarlos a linea y son flexibles
+*/
+/*             POSICIONES
+
+
+          
+           -relative no afecta el resto de los elementos
+          -static
+          -absolute
+          -fixed=fijo
+          -sticky
+       
+*/
+/*             Z-INDEX
+          todos los elementos tienen 1
+          mas alto el z-index mas adelante estara el elemento          */
+
+  /*           flex-direction
+  
+  row = fila
+  row-reverse fila al reves
+  column columna
+  column-reverse columna al reves
+                
+                 flex-wrap
+     nowrap = por defecto siempre muestra todo horizontalmente
+     wrap = permite que se muestren verticalmente
+     wrap-reverse
+                   
+               flex-flow: row wrap;
+
+
+  
+          justify-content:
+          flex-start
+          center
+          flex-end
+          space-between
+          space-around
+          space-evenly;
+
+              EJE X
+
+          align-items 
+          flex-start
+          center
+          flex-end
+          baseline
+          stretch
+          
+          EJE Y
+             
+          align-content:
+          flex-start
+          center
+          flex-end
+          space-between
+          space-around
+          space-evenly
+          ;
+
+
+          ORDER
+        
+            
+
+         
+  */
+
+      /*
+                       GRIDS      
+                       
+                       
+
+
+
+
+
+      */

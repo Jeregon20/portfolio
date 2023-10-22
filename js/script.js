@@ -73,7 +73,7 @@ let posY = 0;
 let direction = 1; // 1 para mover hacia abajo, -1 para mover hacia arriba
 
 function animateFloating() {
-    const speed = 0.5; // Ajusta la velocidad (valores más bajos son más lentos)
+    const speed = 0.2; // Ajusta la velocidad (valores más bajos son más lentos)
 
     posY += speed * direction;
 

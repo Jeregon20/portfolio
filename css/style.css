@@ -2,11 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:ital,wght@0,400;0,500;0,600;0,800;1,500&family=Righteous&display=swap');
 
-@property --rotate {
-  syntax: "<angle>";
-  initial-value: 90deg;
-  inherits: false;
-}
+
 *{
   margin: 0;
   padding: 0;
@@ -28,9 +24,8 @@ html{
 body {
 font-family: 'Poppins', sans-serif;
 height: 400%;
-width: 100vw;
+width: 90vw;
 font-size: 1.5em;
-overflow-x: hidden;
 color: #a4a4a4;
 }
 
@@ -53,7 +48,7 @@ margin: 0px;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 95%;
   border-radius: 1rem 1rem 1rem ;
   box-shadow: 0 0.5rem 1rem rgba(53, 53, 53, 0.2);
   font-family: 'Poppins', sans-serif;
@@ -74,7 +69,7 @@ margin: 0px;
 .nabvar{
   background-color: transparent;
   
-  width: 100%;
+  width: 90%;
 }
 .navbar-nav{
 align-items: center;
@@ -119,8 +114,8 @@ border: none;
   top: 5rem;
 }
 .col-12{
-  margin: 0 ;
-  font-size: 2.7rem;
+  margin: 1rem 0rem 5rem 0rem ;
+  font-size: 2rem;
   color: #000000;
   font-family: 'Righteous', cursive;
   
@@ -142,14 +137,14 @@ hr{
   color: #eeff00;
 }
 .c-img{
-  margin-left: 5rem;
+  margin-left: 4rem;
   margin-top: -8rem ;
   margin-bottom: 4rem ;
   
 }
 
 .img-code{
-  width: 20rem;
+  width: 15rem;
   border: 3px solid rgb(0, 0, 0);
   border-radius: 7rem;
   box-shadow:10px 10px 10px grey ;
@@ -158,19 +153,19 @@ hr{
  /* styles.css */
 @keyframes shadowAnimation {
   0% {
-      box-shadow: 10px 10px 100px rgb(255, 0, 0);
+      box-shadow: 10px 10px 50px rgb(255, 0, 0);
   }
   25% {
-      box-shadow: 10px 10px 100px rgb(92, 235, 92);
+      box-shadow: 10px 10px 50px rgb(92, 235, 92);
   }
   50% {
-      box-shadow: 10px 10px 100px rgb(0, 187, 255);
+      box-shadow: 10px 10px 50px rgb(0, 187, 255);
   }
   75% {
-      box-shadow: 10px 10px 100px rgb(255, 255, 0);
+      box-shadow: 10px 10px 50px rgb(255, 255, 0);
   }
   100% {
-      box-shadow: 10px 10px 100px rgb(226, 3, 255);
+      box-shadow: 10px 10px 50px rgb(226, 3, 255);
   }
   /* Espacio entre la imagen y el texto */
 }
@@ -183,14 +178,14 @@ hr{
  
 }
 .h2-s{
-margin-left: 2rem;
-bottom: 2rem;
+margin: 1rem;
+font-size: .5rem;
 }
 .icons{
-margin: 0 10px;
-height: 90px ;
-margin-left: 3rem;
-border-radius: 50px 50px 50px 50px;
+width: 22rem;
+margin: 0 1rem;
+height: 3.5rem ;
+border-radius: 4rem 4rem 4rem 4rem;
 display: flex;
 flex-direction: row;
 background-color: #ffffff;
@@ -198,9 +193,9 @@ box-shadow: 10px 10px 50px gray;
 animation: shadowAnimation 10s infinite; 
 }
 .icons-img{
-width: 80px;
-height: 80px;
-margin: 10px;
+width: 3rem;
+height: 3rem;
+margin: 0.3rem 1.2rem;
 
 }
 @keyframes shadowAnimation {
@@ -229,6 +224,7 @@ margin: 10px;
   align-items: center;
   padding: 0;
   margin-top: -10rem;
+  width: 90vw;
 }
 
 .about_me-img {
@@ -252,29 +248,36 @@ margin: 10px;
 
 .a-contain{
   margin-top: 2rem;
+  margin-bottom: 5rem;
 }
 .about_me-h1{
  top: 1rem;
  margin-bottom: 3rem;
  text-align: center;
- font-size: 3rem;
+ font-size: 2rem;
  color:  rgb(226, 3, 255);
  font-family: 'Poppins';
  font-weight: bold;
 }
 .about_me-h5{
   text-align: center;
-  padding: 10%;
-  font-size: 1.7rem;
+  padding: 0 15%;
+  margin: 1rem;
+  font-size: 1rem;
   color: rgb(0, 0, 0);
   font-weight:  bold;
 }
-
+.proyects{
+  width: 100%;
+}
 .container-cards{
-  margin: 1rem;
+  margin: 0;
  }
   .primer-h3{
-   margin: 59px 700px;
+  
+    margin-top:3rem;
+    margin-bottom:0 ;
+    margin-left:8rem ;
    
   }
   .h3-p{
@@ -283,8 +286,8 @@ margin: 10px;
   }
   
  .card{
-  margin: 10rem;
-  width: 90%;
+  margin: 1rem;
+  width: 80%;
   padding: 4rem;
   border-radius: 1rem 1rem 1rem 1rem ;
   display: flex;
@@ -294,19 +297,19 @@ margin: 10px;
  }
  @keyframes animation {
   0% {
-      box-shadow: 10px 5px 50px rgb(183, 0, 255);
+      box-shadow: 10px 5px 30px rgb(183, 0, 255);
   }
   25% {
-      box-shadow: 10px 10px 50px rgb(187, 187, 187);
+      box-shadow: 10px 10px 30px rgb(187, 187, 187);
   }
   50% {
-      box-shadow: 10px 10px 50px rgb(221, 0, 255);
+      box-shadow: 10px 10px 30px rgb(221, 0, 255);
   }
   75% {
-      box-shadow: 10px 10px 50px rgb(255, 0, 0);
+      box-shadow: 10px 10px 30px rgb(255, 0, 0);
   }
   100% {
-      box-shadow: 10px 10px 50px rgb(226, 3, 255);
+      box-shadow: 10px 10px 30px rgb(226, 3, 255);
   }
 }
  .left{
@@ -324,15 +327,15 @@ margin: 10px;
   padding-bottom: 40px;
  }
 .c-h4{
-  margin-left: 5rem ;
+  margin-left: 1rem ;
 }
 h4{
   font-weight: bold;
   color:#dd00ff
 }
  .icons-img-p{
-  width: 3rem;
-  margin-left: .5rem;
+  width: 2.5rem;
+  margin-left: -0.5rem;
  }
 
 
@@ -346,7 +349,7 @@ h4{
  }
  .grupohydroimg{
   margin: 0 -9rem;
-  width: 35rem;
+  width: 25rem;
  }
 
  .link-p{
@@ -354,209 +357,20 @@ h4{
   padding: 50px 50px;
  }
  .link-img{
-  margin-left: 50px;
-  width: 40px;
+  margin-left: .5rem;
+  width: 2rem;
  }
  .link-img-github{
   background-color: black;
   border-radius: 50px;
-  width: 40px;
-  margin-left: 50px;
+  width: 2rem;
+  margin-left:1rem;
  }
 
 
 
 
-/*.contenedor{
-display: grid; 
 
-grid-template-columns:30% 70%;
-/* crear columnas 
-*/
-/* grid-template-rows:100px; */
-/* crear filas */
-
-
-
-/* .hijo-uno{
-background-color: #44E2DC;
-}
-.hijo-dos{
-background-color: red;
-}
-.hijo-tres{
-background-color: wheat;
-}
-.hijo-cuatro{
-background-color: purple;
-} */
-
-
-/* .caja{
-  height: 600px;
-  display: grid;
-  background-color: #44E2DC;
-  grid-template-columns: repeat(2,1fr);
-  justify-items: center;
-  align-items: center;
-}
-.item-uno{
-  justify-self: end;
-}
-.item-cuatro{
-  justify-self: end;
-} */
-
-
-/* medidas absolutas en px
- medidas relativas en rem(16px por defecto),% y viewport(sirve para responsive)
- */
-
-
-
-----------------------
-/*TIPOGRAFIA LOCAL
-
-@font-face{
-  font-family: ''mi fuente'';
-  src: url('mi_fuente.ttf'); /*ubicación de la fuent
-
-*/
-
-/*
-                  BOX MODEL
-ancho=width
-alto=height
-overflow=visible/hidden, el excedente lo corta/scroll/auto scroll para cualquier eje 
--imagenes
--no importa si son de linea o de bloque
-content=espacio de texto o imagen
-padding=espacio libre entre el contendio y el borde de la caja , es parte del espacio interno
-margin=separacion asignada desde el borde hacia otros elementos
-
-margin-top
-margin-right
-margin-bottom
-margin-left
-     
-          abreviacion
-     top  right  bottom  left
-margin:10px 20px   30px    40px
-
-padding-top
-padding-right
-padding-bottom
-padding-left
-
-padding: 10px 20px 30px 40px
-*/
-
-/*   BORDES 
-  
-
-border-top
-border-right
-border-bottom
-border-left
-
-  -solid
-  -outset
-   -inset
-  -double
-*/
-
-/* 
-          DISPLAY
-
-      block, inline
-      EN BLOQUE SE COLOCAN UNO DEBAJO DEL OTRO O SE SALTAN LA LINEA
-      INLINE NO HACE NADA Y SOLO LO VISUALIZA
-
-      display: inline (pasar de bloque a linea)
-      display: block(pasar de de linea a bloque
-      display: inline-block (funciona en linea pero tiene elementos en bloque)
-          
-
-      display:flex el padre del contenedor debe tener flex 
-          es como pasarlos a linea y son flexibles
-*/
-/*             POSICIONES
-
-
-          
-           -relative no afecta el resto de los elementos
-          -static
-          -absolute
-          -fixed=fijo
-          -sticky
-       
-*/
-/*             Z-INDEX
-          todos los elementos tienen 1
-          mas alto el z-index mas adelante estara el elemento          */
-
-  /*           flex-direction
-  
-  row = fila
-  row-reverse fila al reves
-  column columna
-  column-reverse columna al reves
-                
-                 flex-wrap
-     nowrap = por defecto siempre muestra todo horizontalmente
-     wrap = permite que se muestren verticalmente
-     wrap-reverse
-                   
-               flex-flow: row wrap;
-
-
-  
-          justify-content:
-          flex-start
-          center
-          flex-end
-          space-between
-          space-around
-          space-evenly;
-
-              EJE X
-
-          align-items 
-          flex-start
-          center
-          flex-end
-          baseline
-          stretch
-          
-          EJE Y
-             
-          align-content:
-          flex-start
-          center
-          flex-end
-          space-between
-          space-around
-          space-evenly
-          ;
-
-
-          ORDER
-        
-            
-
-         
-  */
-
-      /*
-                       GRIDS      
-                       
-                       
-
-
-
-
-
-      */
 
 
                        
@@ -612,9 +426,9 @@ footer{
 .login-box {
   
   top: 120%;
-  width: 90%;
+  width: 70%;
   padding: 10%;
-  margin: 2rem 1rem;
+  margin: 2rem 3rem;
   background: rgba(0,0,0,.5);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
@@ -635,7 +449,7 @@ footer{
 .login-box .user-box input {
   width: 100%;
   padding: 10px 0;
-  font-size: 16px;
+  font-size: .7rem;
   color: #fff;
   margin-bottom: 30px;
   border: none;
@@ -648,7 +462,7 @@ footer{
   top:0;
   left: 0;
   padding: 10px 0;
-  font-size: 16px;
+  font-size: .7rem;
   color: #fff;
   pointer-events: none;
   transition: .5s;
@@ -780,17 +594,17 @@ textarea{
   display:flex;
   flex-direction: row;
   background-color: #ffffff;
-  width: 45%;
-  margin-top: 5%;
+  width: 55%;
+  margin-top: 1%;
   margin-bottom: 5%;
-  margin-left: 15%;
+  margin-left: 25%;
   transition: all ease .55s;
   border-radius: 1rem 1rem 1rem 1rem;
   
 }
 .img{
 width: 20%;
-margin: 1rem ;
+margin: 4rem ;
 border-radius: 6%;
 flex-direction: row;
 justify-content: start;
