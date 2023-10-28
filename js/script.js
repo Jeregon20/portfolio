@@ -91,15 +91,4 @@ function animateFloating() {
 animateFloating(); // Inicia la animación
 
 // script.js
-const modoOscuroToggle = document.getElementById("modoOscuroToggle");
 
-// Escuchar cambios en el interruptor
-modoOscuroToggle.addEventListener("change", () => {
-    if (modoOscuroToggle.checked) {
-        // Habilitar el modo oscuro
-        document.body.classList.add("modo-oscuro");
-    } else {
-        // Deshabilitar el modo oscuro
-        document.body.classList.remove("modo-oscuro");
-    }
-});
